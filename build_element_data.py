@@ -1,8 +1,5 @@
 #!/usr/bin/env python
-"""
-A hackathon-quality script to look up github projects by name and record some metadata about them.
-There's a lot wrong with this script in terms of maintainability and quality but it works.
-"""
+
 import requests
 import json
 import time
@@ -19,7 +16,7 @@ if __name__ == '__main__':
     for element in elements:
         print(element['name'], end=', ', flush=True)
 
-        result = {'stargazers_count': 0, 'url': '', 'description': ''}  # Default data if there is no result.
+        result = {'stargazers_count': 0, 'description': ''}  # Default data if there is no result.
 
         r = requests.get('https://api.github.com/search/repositories?q={}&sort=stars&order=desc'.format(element['name']))
 
@@ -32,7 +29,7 @@ if __name__ == '__main__':
         # Format data, including only a few fields from what Github returned us.
         formatted_result = {
             **element,
-            **{k: v for k, v in result.items() if k in ('stargazers_count', 'url', 'description')}
+            **{k: v for k, v in result.items() if k in ('stargazers_count', 'description')}
         }
 
         formatted_results.append(formatted_result)
