@@ -5,8 +5,8 @@
         "symbol": "H",
         "row": 1,
         "col": 1,
-        "description": "Oxidatrion #",
-        "url": "Coordination  #",
+        "description": "Just checking Oxidation #",
+        "url": "Coordination #",
         "stargazers_count": 2737
     },
     {
