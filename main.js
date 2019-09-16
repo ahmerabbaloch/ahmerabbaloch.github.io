@@ -17,12 +17,12 @@ function getStarRank(count) {
 
 const colors = {
   0: '#eee',
-  1: '#ffffe6',
-  2: '#ffffe6',
-  3: '#ffffe6',
-  4: '#ffffe6',
-  5: '#ffffe6',
-  6: '#ffffe6'
+  1: '196127',
+  2: '196127',
+  3: '196127',
+  4: '196127',
+  5: '196127',
+  6: '196127'
 }
 
 function addElementToTable(data, tableDiv) {
