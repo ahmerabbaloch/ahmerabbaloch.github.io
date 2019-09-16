@@ -5,7 +5,7 @@
         "symbol": "H",
         "row": 1,
         "col": 1,
-        "description": "Just checking Oxidation #",
+        "description": ["ON","CN","iR"],
         "url": "Coordination #",
         "stargazers_count": 2737
     },
