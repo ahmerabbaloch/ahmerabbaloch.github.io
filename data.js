@@ -5,7 +5,7 @@
         "symbol": "H",
         "row": 1,
         "col": 1,
-        "description": [["ON","CN","iR"];["ON2","CN2","iR2"]],
+        "description": ["ON","CN","iR"],
         "url": "Coordination #",
         "stargazers_count": 2737
     },
