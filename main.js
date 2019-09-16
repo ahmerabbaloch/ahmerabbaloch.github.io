@@ -5,12 +5,9 @@ function onElementClick() {
 }
 
 function showElementDetails(element) {
-  let url = element.url.replace('https://api.github.com/repos/', 'http://github.com/')
-  let urlLabel = url.replace('http://github.com/', '')
   document.querySelector('#cardNumber').innerHTML = element.number
   document.querySelector('#cardSymbol').innerHTML = element.symbol
-  document.querySelector('#cardLink').innerHTML = `<a href="${url}">github.com/${urlLabel}</a>`
-  document.querySelector('#cardStars').innerHTML = `★ ${element.stargazers_count}`
+  document.querySelector('#cardStars').innerHTML = element.stargazers_count
   document.querySelector('#cardBlurb').innerHTML = element.description
 }
 
@@ -20,12 +17,12 @@ function getStarRank(count) {
 
 const colors = {
   0: '#eee',
-  1: '#dcffcc',
-  2: '#c6e48b',
-  3: '#7bc96f',
-  4: '#239a3b',
-  5: '#196127',
-  6: '#196127'
+  1: '#ffffe6',
+  2: '#ffffe6',
+  3: '#ffffe6',
+  4: '#ffffe6',
+  5: '#ffffe6',
+  6: '#ffffe6'
 }
 
 function addElementToTable(data, tableDiv) {
